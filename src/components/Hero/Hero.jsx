@@ -8,6 +8,8 @@ import hero_image_back from "../../assets/hero_image_back.png"
 function Hero() {
     return <>
         <div className='hero'>
+            <div className="blur hero-blur"></div>
+            <div className="blur hero-blur-r"></div>
             <div className=" left-h">
                 <Header />
                 <div className="the-best-ad">

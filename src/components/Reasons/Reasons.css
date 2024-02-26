@@ -88,6 +88,6 @@
 
 }
 .partners>img:hover{
-    filter: drop-shadow(15px 5px 5px tomato);
+    filter: drop-shadow(15px 5px 5px rgb(95, 255, 71));
 
 }

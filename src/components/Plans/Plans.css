@@ -51,3 +51,18 @@
 .btn{
     width: 150px;
 }
+.plans-blur-left{
+    width: 500px;
+    height: 400px;
+    top:1700px;
+    left: 0px;
+    background-color: aqua;
+}
+
+.plans-blur-right{
+    width: 500px;
+    height: 400px;
+    top:1900px;
+    left: 800px;
+    background-color: rgb(255, 204, 0);
+}

@@ -73,3 +73,11 @@ body {
     transform: rotate(360deg);
   }
 }
+
+.blur {
+  background-color: rgba(253, 120, 43, 0.7);
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(150px);
+  z-index: -10;
+}

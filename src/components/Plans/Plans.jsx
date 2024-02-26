@@ -65,6 +65,8 @@ const Plans = () => {
 
   return (
     <div className="plans-container">
+      <div className="blur plans-blur-left"></div>
+      <div className="blur plans-blur-right"></div>
       <div className="programs-header">
         <span className='strok-text'>READY TO START</span>
         <span>YOUR JOURNY</span>

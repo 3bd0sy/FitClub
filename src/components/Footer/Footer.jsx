@@ -8,6 +8,7 @@ import logo from "../../assets/logo.png"
 const Footer = () => {
     return (
         <div className="footer-container">
+            <div className='blur footer-blur'></div>
             <div className="footer">
                 <div className="links">
                     <img src={github} alt="" />
