@@ -87,7 +87,7 @@
     width: 70px;
 
 }
-.partners>img:hover{
+.partners>img:hover {
     filter: drop-shadow(15px 5px 5px rgb(95, 255, 71));
 
 }
