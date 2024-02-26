@@ -1,0 +1,53 @@
+.programs-header{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    font-size: 50px;
+    justify-content: center;
+}
+
+
+.plans-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.plans{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.plan{
+    display: flex;
+    flex-direction: column;
+    background-color: slategray;
+    color: white;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 15px;
+    width: 320px;
+    height: 400px;
+}
+.feature{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 10px;
+    align-items: flex-start;
+
+}
+.plan:nth-child(2){
+    background-color: tomato;
+    background: linear-gradient(45deg,#e6a964,tomato);
+        transform: scale(1.1);
+}
+
+.btn{
+    width: 150px;
+}

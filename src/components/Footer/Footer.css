@@ -1,0 +1,25 @@
+.footer-container{
+    position: relative;
+    margin-top: 250px;
+}
+.footer{
+padding: 10px;
+display: flex;
+flex-direction: column;
+gap: 30px;
+align-items: center;
+justify-content: center;
+height: 30px;
+}
+
+.links{
+    display: flex;
+    gap: 60px;
+    margin-bottom: 10px;
+}
+.links>img{
+    width: 50px;
+}
+.links>img:hover{
+    filter: drop-shadow(15px 5px 5px tomato);
+}

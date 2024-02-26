@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+    height: 50;
+}
+
+.list-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    color: white;
+}
+
+.list-menu>li:hover {
+    cursor: pointer;
+    color: tomato;
+}

@@ -1,0 +1,82 @@
+.testimonials {
+    margin-top: 80px;
+    display: flex;
+    gap: 10px;
+    padding: 0 2rem;
+}
+
+.left-t {
+    display: flex;
+    flex: 1 1;
+    gap: 25px;
+    flex-direction: column;
+    text-transform: uppercase;
+    justify-content: left;
+    align-items: flex-start;
+    color: white;
+}
+
+.left-t>:nth-child(1) {
+    color: tomato;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.left-t>:nth-child(2),
+.left-t>:nth-child(3) {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.left-t>:nth-child(1){
+text-transform: none;
+text-align: justify;
+font-size: 20px;
+letter-spacing: 2px;
+line-height: 50px;
+
+}
+.right-t {
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+.right-t>img{
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    right: 150px;
+    top: 100px;
+}
+
+.right-t>:nth-child(1){
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    border: 2px solid tomato;
+    background-color: transparent;
+    right: 170px;
+    top:70px ;
+}
+.right-t>:nth-child(2){
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    background:tomato;
+    right: 120px;
+    top:120px ;
+}
+
+
+.right-t .arrows {
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: -7rem;
+    left: 9rem;
+}
+.right-t .arrows > img {
+    width: 1.5rem;
+    cursor: pointer;
+}
