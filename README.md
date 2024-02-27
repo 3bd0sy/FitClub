@@ -5,7 +5,7 @@
 
 :pushpin: mobile version
 
-:pushpin: [my linkedin](www.linkedin.com/in/abdulbasit-abdulgani)
+:pushpin: [my linkedin](https://www.linkedin.com/in/abdulbasit-abdulgani)
 ## Preview Desktop:
 
 ![react-fit-club (1)](/src/assets/screencapture.jpg)
