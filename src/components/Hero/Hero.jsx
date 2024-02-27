@@ -5,9 +5,10 @@ import hero_image from "../../assets/hero_image.png"
 import heart from "../../assets/heart.png"
 import Calories from "../../assets/calories.png"
 import hero_image_back from "../../assets/hero_image_back.png"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
+import NumberCounter from 'number-counter';
 function Hero() {
-    const transition={type:"spring",duration:3}
+    const transition = { type: "spring", duration: 3 }
     return <>
         <div className='hero' id="home">
             <div className="blur hero-blur"></div>
@@ -15,10 +16,10 @@ function Hero() {
             <div className=" left-h">
                 <Header />
                 <div className="the-best-ad">
-                <motion.div
-                    initial={{left:"240px"}}
-                    whileInView={{left:"10px"}}
-                    transition={transition}></motion.div>
+                    <motion.div
+                        initial={{ left: "240px" }}
+                        whileInView={{ left: "10px" }}
+                        transition={transition}></motion.div>
                     <span>the best fitness club in the world</span>
                 </div>
 
@@ -39,15 +40,21 @@ function Hero() {
 
                 <div className="figures">
                     <div>
-                        <span>+ 140</span>
+                        <span>
+                            <NumberCounter end={140} start={100} preFix="+" delay={4} />
+                        </span>
                         <span>export coachs</span>
                     </div>
                     <div>
-                        <span>+ 987</span>
+                        <span>
+                            <NumberCounter end={987} start={799} preFix="+" delay={4} />
+                        </span>
                         <span>member joined</span>
                     </div>
                     <div>
-                        <span>+ 50</span>
+                        <span>
+                            <NumberCounter end={50} start={33} preFix="+" delay={4} />
+                        </span>
                         <span>fitness programes</span>
                     </div>
                 </div>
@@ -60,11 +67,11 @@ function Hero() {
             </div>
             <div className="right-h">
                 <button className='btn hero-btn'>Join Now</button>
-                <motion.div 
-                initial={{right:"-20px"}}
-                whileInView={{right:"50px"}}
-                transition={transition}
-                className="heart-rate">
+                <motion.div
+                    initial={{ right: "-20px" }}
+                    whileInView={{ right: "50px" }}
+                    transition={transition}
+                    className="heart-rate">
 
                     <img src={heart} alt="" className='d-rate' />
                     <span>heart rate</span><span>102 pdm</span>
@@ -72,11 +79,11 @@ function Hero() {
 
                 <img src={hero_image} className='hero-image' alt="" />
                 <img src={hero_image_back} className='hero-image_back' alt="" />
-                <motion.div 
-                 initial={{right:"700px"}}
-                 whileInView={{right:"550px"}}
-                 transition={transition}
-                className="calories">
+                <motion.div
+                    initial={{ right: "700px" }}
+                    whileInView={{ right: "550px" }}
+                    transition={transition}
+                    className="calories">
                     <img src={Calories} alt="" />
                     <div>
                         <span>Calroies Burned</span>
