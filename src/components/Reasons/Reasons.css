@@ -63,31 +63,85 @@
 
 
 
-.details-r{
+.details-r {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.details-r>div{
+.details-r>div {
     display: flex;
     text-transform: uppercase;
     font-size: 20px;
     gap: 20px;
 }
 
-.partners{
+.partners {
     display: flex;
     gap: 55px;
     justify-content: center;
 }
 
-.partners>img{
+.partners>img {
     margin-top: 10px;
     width: 70px;
-
 }
+
 .partners>img:hover {
     filter: drop-shadow(15px 5px 5px rgb(95, 255, 71));
+}
 
+@media screen and (max-width:786px) {
+    .Reasons {
+        flex-direction: column;
+    }
+
+    .details-r {
+        margin-top: 20px;
+    }
+
+    .details-r>div {
+        display: flex;
+        align-items: flex-start;
+        justify-content: left;
+        font-size: medium;
+    }
+
+    .details-r>div>img {
+        height: 40px;
+    }
+
+    .details-r>div>span {
+        font-size: small;
+        text-align: left;
+    }
+
+    .left-r {
+        grid-auto-rows: auto;
+        overflow: hidden;
+    }
+
+    .left-r>:nth-child(1) {
+        width: 100px;
+        height: 250px;
+    }
+
+    .left-r>:nth-child(2) {
+        width: 150px;
+    }
+
+    .left-r>:nth-child(3) {
+        width: 300px;
+        margin-left: -150px;
+    }
+    .left-r>:nth-child(4) {
+        display: none;
+    }
+    .partners {
+        gap: 25px;
+        margin-bottom: 40px;
+    }
+    .partners>img{
+        width: 50px;
+    }
 }

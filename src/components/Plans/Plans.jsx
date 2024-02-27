@@ -70,7 +70,7 @@ const Plans = () => {
       <div className="programs-header">
         <span className='strok-text'>READY TO START</span>
         <span>YOUR JOURNY</span>
-        <span className='strok-text'>NOW WITHUS</span>
+        <span className='strok-text'>NOW WITH US</span>
       </div>
 
 

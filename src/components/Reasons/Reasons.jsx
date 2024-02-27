@@ -8,8 +8,9 @@ import tick from "../../assets/tick.png";
 import nb from "../../assets/nb.png";
 import adidas from "../../assets/adidas.png";
 import nike from "../../assets/nike.png";
-
+import { motion } from "framer-motion"
 const Reasons = () => {
+    const transition = { type: "spring", duration: 3 };
     return (
         <div className="Reasons">
             <div className="left-r">

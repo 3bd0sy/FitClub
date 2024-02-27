@@ -1,32 +1,50 @@
-.footer-container{
+.footer-container {
     position: relative;
     margin-top: 250px;
 }
-.footer{
-padding: 10px;
-display: flex;
-flex-direction: column;
-gap: 30px;
-align-items: center;
-justify-content: center;
-height: 30px;
+
+.footer {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
 }
 
-.links{
+.links {
     display: flex;
     gap: 60px;
     margin-bottom: 10px;
 }
-.links>img{
+
+.links>img {
     width: 50px;
 }
-.links>img:hover{
+
+.links>img:hover {
     filter: drop-shadow(15px 5px 5px rgb(95, 255, 71));
 }
 
-.footer-blur{
+.footer-blur {
     width: 400px;
     height: 500px;
     left: 40%;
     bottom: 20px;
+}
+
+@media screen and (max-width:786px) {
+    .links {
+        gap: 20px;
+    }
+
+    .links>img {
+        width: 30px;
+    }
+    .logo-f>img{
+        width: 200px;
+    }
+    .footer{margin-bottom: -70px;}
+
 }

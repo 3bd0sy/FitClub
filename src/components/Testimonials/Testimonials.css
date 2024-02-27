@@ -28,20 +28,22 @@
     font-weight: bold;
 }
 
-.left-t>:nth-child(1){
-text-transform: none;
-text-align: justify;
-font-size: 20px;
-letter-spacing: 2px;
-line-height: 50px;
+.left-t>:nth-child(1) {
+    text-transform: none;
+    text-align: justify;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 50px;
 
 }
+
 .right-t {
     display: flex;
     flex: 1;
     position: relative;
 }
-.right-t>img{
+
+.right-t>img {
     position: absolute;
     width: 300px;
     height: 350px;
@@ -50,22 +52,23 @@ line-height: 50px;
     top: 100px;
 }
 
-.right-t>:nth-child(1){
+.right-t>:nth-child(1) {
     position: absolute;
     width: 300px;
     height: 350px;
     border: 2px solid tomato;
     background-color: transparent;
     right: 170px;
-    top:70px ;
+    top: 70px;
 }
-.right-t>:nth-child(2){
+
+.right-t>:nth-child(2) {
     position: absolute;
     width: 300px;
     height: 350px;
-    background:tomato;
+    background: tomato;
     right: 120px;
-    top:120px ;
+    top: 120px;
 }
 
 
@@ -76,7 +79,64 @@ line-height: 50px;
     bottom: -7rem;
     left: 9rem;
 }
-.right-t .arrows > img {
+
+.right-t .arrows>img {
     width: 1.5rem;
     cursor: pointer;
+}
+
+@media screen and (max-width:786px) {
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .left-t>:nth-child(2),
+    .left-t>:nth-child(3) {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: xx-large;
+    }
+
+    .left-t>:nth-child(4) {
+        text-align: left;
+    }
+
+    .left-t>:nth-child(5) {
+        text-align: left;
+        font-size: small;
+    }
+
+    .right-t {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right-t>div {
+        display: none;
+    }
+
+    .right-t>img {
+        position: relative;
+        right: 0px;
+        top: 10px;
+        align-self: center;
+    }
+
+    .right-t:last-child() {
+        display: block;
+    }
+
+    .right-t .arrows {
+        gap: 1rem;
+        bottom: -5rem;
+        left: 5rem;
+    }
+
+    .right-t .arrows>img {
+        width: 3rem;
+        cursor: pointer;
+    }
 }

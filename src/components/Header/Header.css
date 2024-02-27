@@ -19,3 +19,16 @@
     cursor: pointer;
     color: tomato;
 }
+
+@media screen and (max-width:786px) {
+    .header>:nth-child(2){
+        position: fixed;
+        z-index: 10;
+        right: 15px;
+    }
+    .list-menu{
+        flex-direction: column;
+        background-color: rgb(156, 155, 155);
+        padding: 10px;
+    }
+}

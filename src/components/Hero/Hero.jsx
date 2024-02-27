@@ -5,7 +5,9 @@ import hero_image from "../../assets/hero_image.png"
 import heart from "../../assets/heart.png"
 import Calories from "../../assets/calories.png"
 import hero_image_back from "../../assets/hero_image_back.png"
+import {motion} from "framer-motion"
 function Hero() {
+    const transition={type:"spring",duration:3}
     return <>
         <div className='hero'>
             <div className="blur hero-blur"></div>
@@ -13,7 +15,10 @@ function Hero() {
             <div className=" left-h">
                 <Header />
                 <div className="the-best-ad">
-                    <div></div>
+                <motion.div
+                    initial={{left:"240px"}}
+                    whileInView={{left:"10px"}}
+                    transition={transition}></motion.div>
                     <span>the best fitness club in the world</span>
                 </div>
 
@@ -28,9 +33,7 @@ function Hero() {
                         <span>Ideal Body</span>
                     </div>
                     <div className='text-hh'>
-                        <span>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ex recusandae culpa. Vero placeat, nisi voluptatum amet in aspernatur id illo autem eos. Del
-                        </span>
+                        <span>in here we will help you to shape and build your ideal body and live up your life to fuulest                        </span>
                     </div>
                 </div>
 
@@ -56,23 +59,31 @@ function Hero() {
                 </div>
             </div>
             <div className="right-h">
-                <button className='btn'>Join Now</button>
-                <div className="heart-rate">
+                <button className='btn hero-btn'>Join Now</button>
+                <motion.div 
+                initial={{right:"-20px"}}
+                whileInView={{right:"50px"}}
+                transition={transition}
+                className="heart-rate">
 
                     <img src={heart} alt="" className='d-rate' />
                     <span>heart rate</span><span>102 pdm</span>
-                </div>
+                </motion.div>
 
                 <img src={hero_image} className='hero-image' alt="" />
                 <img src={hero_image_back} className='hero-image_back' alt="" />
-                <div className="calories">
+                <motion.div 
+                 initial={{right:"700px"}}
+                 whileInView={{right:"550px"}}
+                 transition={transition}
+                className="calories">
                     <img src={Calories} alt="" />
                     <div>
                         <span>Calroies Burned</span>
                         <span>120 kcal</span>
 
                     </div>
-                </div>
+                </motion.div>
             </div>
 
         </div>

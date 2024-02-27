@@ -1,4 +1,4 @@
-.programs-header{
+.programs-header {
     display: flex;
     flex-direction: row;
     gap: 50px;
@@ -10,20 +10,20 @@
 }
 
 
-.plans-container{
+.plans-container {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.plans{
+.plans {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 40px;
 }
 
-.plan{
+.plan {
     display: flex;
     flex-direction: column;
     background-color: slategray;
@@ -34,7 +34,8 @@
     width: 320px;
     height: 400px;
 }
-.feature{
+
+.feature {
     display: flex;
     flex-direction: row;
     gap: 15px;
@@ -42,27 +43,48 @@
     align-items: flex-start;
 
 }
-.plan:nth-child(2){
+
+.plan:nth-child(2) {
     background-color: tomato;
-    background: linear-gradient(45deg,#e6a964,tomato);
-        transform: scale(1.1);
+    background: linear-gradient(45deg, #e6a964, tomato);
+    transform: scale(1.1);
 }
 
-.btn{
+.btn {
     width: 150px;
 }
-.plans-blur-left{
+
+.plans-blur-left {
     width: 500px;
     height: 400px;
-    top:1700px;
+    top: 1700px;
     left: 0px;
     background-color: aqua;
 }
 
-.plans-blur-right{
+.plans-blur-right {
     width: 500px;
     height: 400px;
-    top:1900px;
+    top: 1900px;
     left: 800px;
     background-color: rgb(255, 204, 0);
+}
+
+@media screen and (max-width:786px) {
+    .plans {
+        flex-direction: column;
+    }
+.programs-header{
+    margin-top: 50px;
+    gap: 15px;
+    flex-direction: column;
+    font-size:xx-large;
+}
+    .plan {
+        width: 250px;
+    }
+
+    .plans>:nth-child(2) {
+        width: 240px;
+    }
 }

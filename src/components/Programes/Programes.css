@@ -68,3 +68,21 @@
 .join-now>img{
     margin-left: 200px;
 }
+
+@media screen and (max-width:786px){
+    .programes-header{
+        flex-direction: column;
+        gap: 10px;
+        font-size: x-large;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+    }
+    .program-categories{
+        flex-direction: column;
+    }
+    .join-now>img{
+        margin-left: 100px;
+    }
+
+}
