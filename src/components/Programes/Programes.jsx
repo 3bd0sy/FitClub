@@ -53,7 +53,7 @@ const Programes = () => {
             "This programs is designed for those who exercises only for their body fitness not body building.",
     }]
     return (
-        <div className="Programes">
+        <div className="Programes" id="programes">
             <div className="programes-header">
                 <span className='strok-text'>Explore our</span>
                 <span>Programs</span>

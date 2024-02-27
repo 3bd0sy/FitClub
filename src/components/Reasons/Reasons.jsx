@@ -12,7 +12,7 @@ import { motion } from "framer-motion"
 const Reasons = () => {
     const transition = { type: "spring", duration: 3 };
     return (
-        <div className="Reasons">
+        <div className="Reasons" id='reasons'>
             <div className="left-r">
                 <img src={image1} alt="" />
                 <img src={image2} alt="" />

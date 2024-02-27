@@ -64,7 +64,7 @@ const Plans = () => {
 
 
   return (
-    <div className="plans-container">
+    <div className="plans-container" id='plans'>
       <div className="blur plans-blur-left"></div>
       <div className="blur plans-blur-right"></div>
       <div className="programs-header">

@@ -9,7 +9,7 @@ import {motion} from "framer-motion"
 function Hero() {
     const transition={type:"spring",duration:3}
     return <>
-        <div className='hero'>
+        <div className='hero' id="home">
             <div className="blur hero-blur"></div>
             <div className="blur hero-blur-r"></div>
             <div className=" left-h">
